@@ -1,9 +1,9 @@
 export const StatisticsCard = props => {
   const { label, percentage } = props;
   return (
-    <li class="item">
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}</span>
+    <li className="item">
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage}</span>
     </li>
   );
 };

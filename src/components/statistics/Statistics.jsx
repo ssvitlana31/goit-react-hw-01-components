@@ -3,10 +3,10 @@ import { StatisticsCard } from './Statistics-card';
 export const Statistics = props => {
   const { title, stats } = props;
   return (
-    <section class="statistics">
-      <h2 class="title">{title}</h2>
+    <section className="statistics">
+      <h2 className="title">{title}</h2>
 
-      <ul class="stat-list">
+      <ul className="stat-list">
         {stats.map(({ id, label, percentege }) => (
           <StatisticsCard key={id} label={label} percentege={percentege} />
         ))}
