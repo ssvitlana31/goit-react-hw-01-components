@@ -1,16 +1,31 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import { StatisticsCard } from './Statistics-card';
+import { Section, Stats, Title } from './Statistic-styled';
 
 export const Statistics = props => {
   const { title, stats } = props;
-  return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
 
-      <ul className="stat-list">
-        {stats.map(({ id, label, percentege }) => (
-          <StatisticsCard key={id} label={label} percentege={percentege} />
+  return (
+    <Section>
+      <Title>{title}</Title>
+
+      <Stats>
+        {stats.map(({ id, label, percentage }) => (
+          <StatisticsCard key={id} label={label} percentage={percentage} />
         ))}
-      </ul>
-    </section>
+      </Stats>
+    </Section>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number,
+    })
+  ),
 };

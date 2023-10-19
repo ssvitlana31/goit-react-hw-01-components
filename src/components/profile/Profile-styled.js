@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: ${({ theme }) => theme.spacing(8)};
-  width: 300px;
+  width: 250px;
   margin: 0 auto;
   padding: 20px;
   box-shadow: ${({ theme }) => theme.shadows.default};
@@ -17,11 +17,11 @@ export const Descr = styled.div`
   align-items: center;
   gap: ${({ theme }) => theme.spacing(3)};
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   background-color: ${({ theme }) => theme.colors.background};
 `;
 export const Avatar = styled.img`
-  width: 280px;
+  width: 240px;
   outline: 2px solid aquamarine;
   padding: 5px;
 `;
@@ -31,17 +31,17 @@ export const Name = styled.p`
 `;
 export const Tag = styled.p`
   font-size: 20px;
-  color: #747171;
+  color: black;
 `;
 export const Location = styled.p`
   font-size: 20px;
-  color: #747171;
+  color: black;
 `;
 
 export const Stats = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   width: 100%;
   gap: ${({ theme }) => theme.spacing(4)};
   font-size: ${({ theme }) => theme.spacing(5)};
