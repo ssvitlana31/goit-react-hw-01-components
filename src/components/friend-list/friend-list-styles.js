@@ -12,7 +12,7 @@ export const Item = styled.li`
   display: flex;
   align-items: center;
   gap: ${({ theme }) => theme.spacing(3)};
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #0fccce;
   border-radius: ${({ theme }) => theme.spacing(2)};
   box-shadow: ${({ theme }) => theme.shadows.default};
