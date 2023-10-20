@@ -21,7 +21,7 @@ export const Status = styled.span`
   border-radius: 50%;
   width: ${({ theme }) => theme.spacing(3)};
   height: ${({ theme }) => theme.spacing(3)};
-  background-color: ${props => (props.$isOnline ? 'green' : 'red')};
+  background-color: ${props => (props.$online ? 'green' : 'red')};
 `;
 export const Avatar = styled.img`
   background-color: lightgray;

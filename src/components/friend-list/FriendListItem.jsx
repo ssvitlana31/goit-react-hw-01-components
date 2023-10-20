@@ -6,7 +6,7 @@ export const FriendListItem = props => {
   const { avatar, name, isOnline } = props;
   return (
     <Item>
-      <Status>{isOnline}</Status>
+      <Status $online={isOnline}></Status>
       <Avatar src={avatar} alt="User avatar" width="48" />
       <Name>{name}</Name>
     </Item>

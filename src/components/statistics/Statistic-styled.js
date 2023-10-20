@@ -31,5 +31,5 @@ export const Item = styled.li`
   flex-direction: column;
   align-items: center;
   border: 2px solid aquamarine;
-  background-color: ${props => props.$bg};
+  background-color: ${props => props.bg};
 `;
