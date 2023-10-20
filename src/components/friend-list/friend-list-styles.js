@@ -8,11 +8,11 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  width: 250px;
+  width: 230px;
   display: flex;
   align-items: center;
   gap: ${({ theme }) => theme.spacing(3)};
-  padding: 10px 20px;
+  padding: 10px;
   border: 1px solid #0fccce;
   border-radius: ${({ theme }) => theme.spacing(2)};
   box-shadow: ${({ theme }) => theme.shadows.default};
