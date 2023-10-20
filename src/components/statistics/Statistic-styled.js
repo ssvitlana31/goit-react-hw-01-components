@@ -25,6 +25,7 @@ export const Title = styled.h2`
 export const Stats = styled.ul`
   display: flex;
   justify-content: center;
+  gap: ${({ theme }) => theme.spacing(2)};
 `;
 export const Item = styled.li`
   display: flex;
@@ -32,4 +33,6 @@ export const Item = styled.li`
   align-items: center;
   border: 2px solid aquamarine;
   background-color: ${props => props.bg};
+  padding: ${({ theme }) => theme.spacing(1)};
+  gap: ${({ theme }) => theme.spacing(2)};
 `;

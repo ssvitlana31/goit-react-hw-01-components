@@ -8,8 +8,8 @@ export const Statistics = props => {
 
   return (
     <Section>
-      <Title>{title}</Title>
-
+      {/* <Title>{title}</Title> */}
+      {title ? <Title>{title}</Title> : null}
       <Stats>
         {stats.map(({ id, label, percentage }) => (
           <StatisticsCard key={id} label={label} percentage={percentage} />
